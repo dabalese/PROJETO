@@ -1,0 +1,69 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\danie\OneDrive\햞ea de Trabalho\PROJETO_DANIELBARBOSA_122110253\simulation\modelsim
+vTest_Bench
+!i10b 1
+!s100 A6i]CZlTo;=@[EA7QeU`N2
+I^lkEBSXd6N3A^<6R^_kV?2
+VIk?bBZgY8cJ_3gDmic;i<0
+Z1 dC:\Users\danie\OneDrive\햞ea de Trabalho\PROJETO_DANIELBARBOSA_122110253\simulation\modelsim
+w1714677252
+8C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253/Test_Bench.v
+FC:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253/Test_Bench.v
+L0 1
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1714677622.539000
+!s107 C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253/Test_Bench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253|C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253/Test_Bench.v|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work {+incdir+C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253} -O0
+n@test_@bench
+Etop
+Z2 w1714677266
+Z3 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
+Z4 DPx9 cycloneii 19 cycloneii_atom_pack 0 22 zUjlM<IUJVWSWg:L2<>ic3
+Z5 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
+Z6 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z8 DPx9 cycloneii 20 cycloneii_components 0 22 h@gSJ;Al32oYg[7^PbnAR0
+R1
+Z9 8Mod_Teste.vho
+Z10 FMod_Teste.vho
+l0
+L34
+VE:iNb?7C0^1:dAS4>T0<R3
+Z11 OV;C;10.1d;51
+31
+Z12 !s108 1714677621.981000
+Z13 !s90 -reportprogress|300|-93|-work|work|Mod_Teste.vho|
+Z14 !s107 Mod_Teste.vho|
+Z15 o-93 -work work -O0
+Z16 tExplicit 1
+!s100 T<MWV_jcT[53AZ1mL@1Go3
+!i10b 1
+Astructure
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 3 top 0 22 E:iNb?7C0^1:dAS4>T0<R3
+l59
+L46
+VMXljGa?oS2hRVFM>N7F@l2
+R11
+31
+R12
+R13
+R14
+R15
+R16
+!s100 6=B`:_SgAaRj72KL;K;kj0
+!i10b 1
