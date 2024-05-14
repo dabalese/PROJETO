@@ -1,0 +1,320 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\danie\OneDrive\햞ea de Trabalho\PROJETO_DANIELBARBOSA_122110253 - PARTE 6\simulation\modelsim
+vADDER
+ISnGQD?D?1H=<X1T_OAZ;02
+VP=nL@A5X]6Xl>O0DeaiBX1
+Z1 dC:\Users\danie\OneDrive\햞ea de Trabalho\PROJETO_DANIELBARBOSA_122110253 - PARTE 6\simulation\modelsim
+w1715424641
+8C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/ADDER.v
+FC:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/ADDER.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work {+incdir+C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6} -O0
+n@a@d@d@e@r
+!i10b 1
+!s100 gnB0e^c=9_VcZ[AAblVaW2
+!s85 0
+!s108 1715639809.496000
+!s107 C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/ADDER.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6|C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/ADDER.v|
+!s101 -O0
+vControl_Unit
+IObaQ10ogZM7aZ@ZJ1:iJk0
+VNZ6WjCL3hz4?HPMn9DQB43
+R1
+w1715425163
+8C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Control_Unit.v
+FC:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Control_Unit.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@control_@unit
+!i10b 1
+!s100 ORl5dNO_MWHD6W:7QSJC[3
+!s85 0
+!s108 1715639808.366000
+!s107 C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Control_Unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6|C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Control_Unit.v|
+!s101 -O0
+vData_Memory
+In?Ngje=:mU2USmK744U`<3
+V]YVES`O3akf2[hCoHQeI@3
+R1
+w1715424275
+8C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Data_Memory.v
+FC:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Data_Memory.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@data_@memory
+!i10b 1
+!s100 6LB_C3eaU`UGeJ51Wl4G51
+!s85 0
+!s108 1715639808.623000
+!s107 C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Data_Memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6|C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Data_Memory.v|
+!s101 -O0
+vE_AND
+IU81i3C7Q==6CnnF6ZTGfG3
+V^kWZCP_I:k`1hAmjS4_lE0
+R1
+w1714838342
+8C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/AND.v
+FC:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/AND.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@e_@a@n@d
+!i10b 1
+!s100 0RZd@1g_Ie0aW3=9DTT2@2
+!s85 0
+!s108 1715639810.073000
+!s107 C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/AND.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6|C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/AND.v|
+!s101 -O0
+vE_OR
+IUMM30ZTMN;Hk[g_nKkXfE0
+Vl:o:c=l[zRSlW@l>@?GVQ1
+R1
+w1715278379
+8C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/OR.v
+FC:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/OR.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@e_@o@r
+!i10b 1
+!s100 >eRkXmL5Bb<BnWU@HAG_h0
+!s85 0
+!s108 1715639810.268000
+!s107 C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/OR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6|C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/OR.v|
+!s101 -O0
+vEXTENSOR
+IZh2T0U:KII9i]QRF<FA[Y0
+V8I4GETMH]9dSjYi416[4:2
+R1
+w1715424365
+8C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/EXTENSOR.v
+FC:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/EXTENSOR.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@e@x@t@e@n@s@o@r
+!i10b 1
+!s100 C9I_Mj7NTc;lznzWcLb?e3
+!s85 0
+!s108 1715639809.179000
+!s107 C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/EXTENSOR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6|C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/EXTENSOR.v|
+!s101 -O0
+vInstruction_Memory
+IDU54mKQQe3H=PNU:4PPeQ2
+VXc^ePloGZ^mMz9TF?m]N81
+R1
+w1715426002
+8C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Instruction_Memory.v
+FC:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Instruction_Memory.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@instruction_@memory
+!i10b 1
+!s100 cWRHeY4C?MRTXLb:XWP163
+!s85 0
+!s108 1715639808.493000
+!s107 C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Instruction_Memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6|C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Instruction_Memory.v|
+!s101 -O0
+vMUX2X1
+I84EbSVALGKcEjOlWhomS<0
+VY^<[iY>Kc30iZ`11]3HOA0
+R1
+w1715209993
+8C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/MUX2X1.v
+FC:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/MUX2X1.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@m@u@x2@x1
+!i10b 1
+!s100 eni8]CP2TjM<7]P4EU:PW0
+!s85 0
+!s108 1715639809.884000
+!s107 C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/MUX2X1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6|C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/MUX2X1.v|
+!s101 -O0
+vMUX3X1
+IVRedD1[TLk[h_^zfTJTnb0
+VS^aREUQ1=?R6Q<6KDD_Fc2
+R1
+w1715277703
+8C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/MUX3X1.v
+FC:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/MUX3X1.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@m@u@x3@x1
+!i10b 1
+!s100 ^Ug@6JZ=^ZH?<_Q@KEa_U2
+!s85 0
+!s108 1715639809.675000
+!s107 C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/MUX3X1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6|C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/MUX3X1.v|
+!s101 -O0
+vParallel_IN
+ICidm;=@eS0KNMXRXfXcSd2
+VhIc@cNmkBR^>ZGCNbR0eY1
+R1
+w1715344010
+8C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Parallel_IN.v
+FC:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Parallel_IN.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@parallel_@i@n
+!i10b 1
+!s100 ;di9EaU<_3KQ]j34S0JjK0
+!s85 0
+!s108 1715639808.748000
+!s107 C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Parallel_IN.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6|C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Parallel_IN.v|
+!s101 -O0
+vParallel_OUT
+IcmOGi@NZiWZR8TQo_LYXa1
+VE^HEXSb1J^ALLNlJ?ih@G3
+R1
+w1715344011
+8C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Parallel_OUT.v
+FC:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Parallel_OUT.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@parallel_@o@u@t
+!i10b 1
+!s100 f?T>Oa8Nnl7ai`[bT<CF61
+!s85 0
+!s108 1715639808.927000
+!s107 C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Parallel_OUT.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6|C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Parallel_OUT.v|
+!s101 -O0
+vProgram_Counter
+I2GzWIBf<iUNIkQO8@2`:O2
+VE?]nnE2cRQIfj;75dikRR2
+R1
+w1715286155
+8C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Program_Counter.v
+FC:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Program_Counter.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@program_@counter
+!i10b 1
+!s100 ISc6nd23SA8BJY62m@CLX2
+!s85 0
+!s108 1715639809.310000
+!s107 C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Program_Counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6|C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Program_Counter.v|
+!s101 -O0
+vRegister_File
+IBDJ[TijA7K9:L];EMGcT_3
+V1<L8^7MndBhETVWe9Ja322
+R1
+w1715424898
+8C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Register_File.v
+FC:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Register_File.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@register_@file
+!i10b 1
+!s100 OfzZX071lXAPa9:me0V7D2
+!s85 0
+!s108 1715639808.236000
+!s107 C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Register_File.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6|C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Register_File.v|
+!s101 -O0
+vTest_Bench
+!i10b 1
+!s100 IZ9@;@DOZ3Q4K_i3cI56_2
+IJfzCon29Amd=OV42g`BPC3
+VIk?bBZgY8cJ_3gDmic;i<0
+R1
+w1715639792
+8C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Test_Bench.v
+FC:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Test_Bench.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1715639810.463000
+!s107 C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Test_Bench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6|C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Test_Bench.v|
+!s101 -O0
+R3
+R4
+n@test_@bench
+vULA
+I;CRL3WhN`7UMJ?SKM_nNb2
+V09A_bL`Az[El]N@JV2KIl2
+R1
+w1715635948
+8C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/ULA.v
+FC:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/ULA.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@u@l@a
+!i10b 1
+!s100 hQlNDf1eL;6RUP36lIh673
+!s85 0
+!s108 1715639809.056000
+!s107 C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/ULA.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6|C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/ULA.v|
+!s101 -O0
