@@ -1,0 +1,138 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Mod_Teste_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/햞ea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253\ -\ PARTE\ 6 {C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Test_Bench.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Test_Bench
+# 
+# Top level modules:
+# 	Test_Bench
+# vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/햞ea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253\ -\ PARTE\ 6 {C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Register_File.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Register_File
+# 
+# Top level modules:
+# 	Register_File
+# vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/햞ea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253\ -\ PARTE\ 6 {C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Control_Unit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Control_Unit
+# 
+# Top level modules:
+# 	Control_Unit
+# vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/햞ea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253\ -\ PARTE\ 6 {C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Instruction_Memory.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Instruction_Memory
+# 
+# Top level modules:
+# 	Instruction_Memory
+# vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/햞ea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253\ -\ PARTE\ 6 {C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Data_Memory.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Data_Memory
+# 
+# Top level modules:
+# 	Data_Memory
+# vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/햞ea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253\ -\ PARTE\ 6 {C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Parallel_IN.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Parallel_IN
+# 
+# Top level modules:
+# 	Parallel_IN
+# vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/햞ea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253\ -\ PARTE\ 6 {C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Parallel_OUT.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Parallel_OUT
+# 
+# Top level modules:
+# 	Parallel_OUT
+# vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/햞ea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253\ -\ PARTE\ 6 {C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/ULA.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ULA
+# 
+# Top level modules:
+# 	ULA
+# vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/햞ea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253\ -\ PARTE\ 6 {C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/EXTENSOR.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module EXTENSOR
+# 
+# Top level modules:
+# 	EXTENSOR
+# vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/햞ea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253\ -\ PARTE\ 6 {C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Program_Counter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Counter
+# 
+# Top level modules:
+# 	Program_Counter
+# vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/햞ea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253\ -\ PARTE\ 6 {C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/ADDER.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ADDER
+# 
+# Top level modules:
+# 	ADDER
+# vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/햞ea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253\ -\ PARTE\ 6 {C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/MUX3X1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MUX3X1
+# 
+# Top level modules:
+# 	MUX3X1
+# vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/햞ea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253\ -\ PARTE\ 6 {C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/MUX2X1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MUX2X1
+# 
+# Top level modules:
+# 	MUX2X1
+# vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/햞ea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253\ -\ PARTE\ 6 {C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/AND.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module E_AND
+# 
+# Top level modules:
+# 	E_AND
+# vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/햞ea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253\ -\ PARTE\ 6 {C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/OR.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module E_OR
+# 
+# Top level modules:
+# 	E_OR
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/햞ea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253\ -\ PARTE\ 6 {C:/Users/danie/OneDrive/햞ea de Trabalho/PROJETO_DANIELBARBOSA_122110253 - PARTE 6/Test_Bench.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Test_Bench
+# 
+# Top level modules:
+# 	Test_Bench
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  Test_Bench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps Test_Bench 
+# Loading work.Test_Bench
+# Loading work.MUX2X1
+# Loading work.Program_Counter
+# Loading work.ADDER
+# Loading work.Instruction_Memory
+# Loading work.Control_Unit
+# Loading work.E_AND
+# Loading work.E_OR
+# Loading work.Register_File
+# Loading work.EXTENSOR
+# Loading work.ULA
+# Loading work.Data_Memory
+# Loading work.Parallel_OUT
+# Loading work.Parallel_IN
+# Loading work.MUX3X1
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break key hit 
+# Simulation stop requested.
+# Simulation Breakpoint: Simulation stop requested.
+# MACRO ./Mod_Teste_run_msim_rtl_verilog.do PAUSED at line 31

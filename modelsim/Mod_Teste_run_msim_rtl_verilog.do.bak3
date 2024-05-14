@@ -1,0 +1,29 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/√Årea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253 {C:/Users/danie/OneDrive/¡rea de Trabalho/PROJETO_DANIELBARBOSA_122110253/Test_Bench.v}
+vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/√Årea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253 {C:/Users/danie/OneDrive/¡rea de Trabalho/PROJETO_DANIELBARBOSA_122110253/BANCO_DE_REGISTRADORES.v}
+vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/√Årea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253 {C:/Users/danie/OneDrive/¡rea de Trabalho/PROJETO_DANIELBARBOSA_122110253/MUX2X1.v}
+vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/√Årea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253 {C:/Users/danie/OneDrive/¡rea de Trabalho/PROJETO_DANIELBARBOSA_122110253/SOMADOR.v}
+vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/√Årea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253 {C:/Users/danie/OneDrive/¡rea de Trabalho/PROJETO_DANIELBARBOSA_122110253/AND.v}
+vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/√Årea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253 {C:/Users/danie/OneDrive/¡rea de Trabalho/PROJETO_DANIELBARBOSA_122110253/ControlUnit.v}
+vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/√Årea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253 {C:/Users/danie/OneDrive/¡rea de Trabalho/PROJETO_DANIELBARBOSA_122110253/Instruction_Memory.v}
+vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/√Årea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253 {C:/Users/danie/OneDrive/¡rea de Trabalho/PROJETO_DANIELBARBOSA_122110253/Program_Counter.v}
+vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/√Årea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253 {C:/Users/danie/OneDrive/¡rea de Trabalho/PROJETO_DANIELBARBOSA_122110253/Data_Memory.v}
+vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/√Årea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253 {C:/Users/danie/OneDrive/¡rea de Trabalho/PROJETO_DANIELBARBOSA_122110253/ULA.v}
+vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/√Årea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253 {C:/Users/danie/OneDrive/¡rea de Trabalho/PROJETO_DANIELBARBOSA_122110253/Mux4x1.v}
+vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/√Årea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253 {C:/Users/danie/OneDrive/¡rea de Trabalho/PROJETO_DANIELBARBOSA_122110253/Parallel_OUT.v}
+vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/√Årea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253 {C:/Users/danie/OneDrive/¡rea de Trabalho/PROJETO_DANIELBARBOSA_122110253/Parallel_IN.v}
+
+vlog -vlog01compat -work work +incdir+C:/Users/danie/OneDrive/√Årea\ de\ Trabalho/PROJETO_DANIELBARBOSA_122110253 {C:/Users/danie/OneDrive/¡rea de Trabalho/PROJETO_DANIELBARBOSA_122110253/Test_Bench.v}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  Test_Bench
+
+add wave *
+view structure
+view signals
+run -all
