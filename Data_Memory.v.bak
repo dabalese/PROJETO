@@ -1,0 +1,23 @@
+module Data_Memory(
+input rst, clk, WE,
+input [7:0] A, WD,
+output reg [7:0] RD
+);
+
+always@(posedge clk or negedge rst) begin
+	if(!rst) begin
+		RD <= 8'b0;
+	end else begin
+		if(WE == 1'b1) begin
+			RD[A] <= WD;
+		end
+	end
+end
+
+
+always@(*)begin
+	RD = A;
+end 
+
+
+endmodule

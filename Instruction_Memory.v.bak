@@ -1,0 +1,13 @@
+module Instruction_Memory(
+
+input [7:0] A,
+output reg [31:0] RD
+
+);
+reg [31:0] memoria [255:0];
+
+always@(*)begin
+    RD = memoria[A];
+end
+
+endmodule

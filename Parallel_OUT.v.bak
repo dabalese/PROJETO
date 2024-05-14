@@ -1,0 +1,23 @@
+module Parallel_OUT(
+    input EN, clk, rst,
+    input [7:0] RegData, Address,
+    output reg [7:0] DataOut
+);
+reg [7:0] registrador;
+
+always@(posedge clk or negedge rst) begin
+    if(!rst) begin
+        registrador <= 8'b0;
+    end else begin
+        if(EN == 1'b1 && Address == 8'hFF) begin
+            registrador <= RegData;
+        end
+    end
+end
+    
+always@(*) begin
+    DataOut = registrador;
+end
+
+endmodule
+

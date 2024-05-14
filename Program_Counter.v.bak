@@ -1,0 +1,16 @@
+module Program_Counter(
+    input [7:0] PCin,
+    input clk, rst,
+    
+    output reg [7:0] PC
+);
+
+always @ (posedge clk or negedge rst) begin
+    if(!rst) begin
+        PC <= 8'b00000000;
+    end else begin
+        PC <= PCin;
+    end
+end
+
+endmodule

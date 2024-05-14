@@ -1,0 +1,235 @@
+`timescale 1ns/1ps
+module Test_Bench (input Test_Bench);
+//---------- modifique a partir daqui ----------
+
+
+
+wire w_ULASrc, w_RegWrite, w_MemWrite, w_ResultSrc, w_PCSrc, w_Zero, w_Branch; //fios de 1 bits sem o fioclk
+wire [1:0] w_ImmSrc;    //fios de 2 bits
+wire [2:0] w_ULAControl; //fios de 3 bits
+wire [7:0] w_rd1SrcA, w_rd2, w_SrcB, w_ULAResult, w_PC, w_PCp4, w_Wd3, w_Imm, w_RData, w_ImmPC, w_PCn, w_DataOut, w_DataIn, w_RegData; //fios de 8 bits
+wire [31:0] w_Inst; //fios de 32 bits
+
+//fios de entrada
+reg [7:0]in; 
+reg rst, fioclk;
+
+//fios de saida
+wire out;  
+
+
+MUX2X1 MuxPCSrc(
+    .a(w_PCp4),
+    .b(w_ImmPC),
+    .sel(w_PCSrc), 
+    .res(w_PCn)
+);
+
+
+Program_Counter program_counter(
+    .PCin(w_PCn),
+    .clk(fioclk), 
+    .rst(rst),
+    .PC(w_PC)
+);
+
+
+
+Somador somador_PC(
+	.a(w_PC),
+	.b(8'h04),
+	.res(w_PCp4)
+);
+
+
+
+Instruction_Memory instruction_memory(
+	 .A(w_PC),
+	 .RD(w_Inst)
+);
+
+
+
+ControlUnit controlunit(
+    .OP(w_Inst[6:0]),
+    .Funct3(w_Inst[14:12]),
+    .Funct7(w_Inst[31:25]),
+
+    .RegWrite(w_RegWrite),
+    .ImmSrc(w_ImmSrc),
+    .ULASrc(w_ULASrc),
+    .ULAControl(w_ULAControl),
+    .MemWrite(w_MemWrite),
+    .ResultSrc(w_ResultSrc),
+	 .Branch(w_Branch)
+);
+
+
+
+E_AND e_and(
+	.a(w_Branch),
+	.b(w_Zero),  
+	.c(w_PCSrc)
+);
+
+
+
+Banco_registradores banco_registradores(
+    .Write_Adress(w_Inst[11:7]),
+    .Write_Enable(w_RegWrite),
+    .Write_Data(w_Wd3),
+    .clock(fioclk),
+    .reset(rst),
+    .ra1(w_Inst[19:15]),
+    .ra2(w_Inst[24:20]),
+    .rd1(w_rd1SrcA),
+    .rd2(w_rd2),
+	 
+);
+assign w_d0x4 = w_PC;
+
+
+
+MUX4X1 MuxImmSrc(
+.a(w_Inst[31:20]),
+.b({w_Inst[31:25], w_Inst[11:7]}),
+.c({w_Inst[7], w_Inst[30:25], w_Inst[11:8], 1'b0}),
+.sel(w_ImmSrc), 
+.res(w_Imm)
+);
+
+
+
+Somador somador_IMM(
+	.a(w_Imm),
+	.b(w_PC),
+	.res(w_ImmPC)
+);
+
+
+
+MUX2X1 MuxULASrc(
+    .a(w_rd2),
+    .b(w_Imm),
+    .sel(w_ULASrc),
+    .res(w_SrcB)
+);
+
+
+
+ULA ula(
+    .SrcA(w_rd1SrcA),
+    .SrcB(w_SrcB),
+    .ULAControl(w_ULAControl),
+    .ULAResult(w_ULAResult),
+    .Zero(w_Zero)
+);
+
+
+
+Data_Memory data_memory(
+    .rst(rst),
+    .clk(fioclk),
+    .WE(w_MemWrite),
+    .A(w_ULAResult),
+    .WD(w_rd2),
+    .RD(w_RData)
+);
+
+
+
+Parallel_OUT parallel_out(
+    .EN(w_MemWrite), 
+    .clk(fioclk), 
+    .rst(rst),
+    .RegData(w_rd2),
+    .Address(w_ULAResult),
+    .DataOut(w_DataOut)
+);
+
+
+
+Parallel_IN parallel_in(
+    .MemData(w_RData), 
+    .Address(w_ULAResult), 
+    .DataIn(w_DataIn),
+    .RegData(w_RegData)
+);
+
+
+
+MUX2X1 MuxResSrc(
+    .a(w_ULAResult),
+    .b(w_RegData),
+    .sel(w_ResultSrc), 
+    .res(w_Wd3)
+);
+
+
+
+//DECODER4X16 decoder7(.ent(w_Inst[31:28]),.res(HEX7));
+//DECODER4X16 decoder6(.ent(w_Inst[27:24]),.res(HEX6));
+//DECODER4X16 decoder5(.ent(w_Inst[23:20]),.res(HEX5));
+//DECODER4X16 decoder4(.ent(w_Inst[19:16]),.res(HEX4));
+//DECODER4X16 decoder3(.ent(w_Inst[15:12]),.res(HEX3));
+//DECODER4X16 decoder2(.ent(w_Inst[11:8]),.res(HEX2));
+//DECODER4X16 decoder1(.ent(w_Inst[7:4]),.res(HEX1));
+//DECODER4X16 decoder0(.ent(w_Inst[3:0]),.res(HEX0));
+
+
+
+//assign LEDR[7] = w_RegWrite;
+//assign LEDR[6] = w_ImmSrc;
+//assign LEDR[5] = w_ULASrc;
+//assign LEDR[4:2] = w_ULAControl;
+//assign LEDR[1] = w_MemWrite;
+//assign LEDR[0] = w_ResultSrc;
+
+
+
+/*
+FrequencyDivider frequencydivider(
+    .clk_50MHz(CLOCK_50),    
+    .clk_1Hz(fioclk)
+);
+*/
+
+//assign LEDG[8] = ~KEY[1];
+
+assign out = w_DataOut;
+assign w_DataIn = in;
+
+
+
+always
+	begin
+		#10 fioclk <= ~fioclk;
+	end
+
+
+
+initial
+	begin
+		fioclk <= 1'b0;
+		in <= 00000000;rst <= 0;
+		#200	
+		in <= 00000001;rst <= 0;
+		#200	
+		in <= 00000010;rst <= 0;
+		#200	
+		in <= 00000011;rst <= 0;
+		#200	
+		in <= 00000100;rst <= 0;
+		#200	
+		in <= 01000000;rst <= 0;
+		#200	
+		in <= 10000000;rst <= 0;
+		#200	
+		in <= 11011000;rst <= 0;
+		#400
+		$stop;
+		$finish;
+	end
+	
+
+endmodule
