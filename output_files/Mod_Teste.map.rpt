@@ -1,0 +1,335 @@
+Analysis & Elaboration report for Mod_Teste
+Mon May 13 19:36:34 2024
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Analysis & Elaboration Settings
+  5. Port Connectivity Checks: "Parallel_OUT:parallel_out"
+  6. Port Connectivity Checks: "EXTENSOR:MuxImmSrc"
+  7. Port Connectivity Checks: "Register_File:register_file"
+  8. Port Connectivity Checks: "ADDER:somador_PC"
+  9. Analysis & Elaboration Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                       ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Elaboration Status      ; Successful - Mon May 13 19:36:34 2024           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; Mod_Teste                                       ;
+; Top-level Entity Name              ; Test_Bench                                      ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; N/A until Partition Merge                       ;
+;     Total combinational functions  ; N/A until Partition Merge                       ;
+;     Dedicated logic registers      ; N/A until Partition Merge                       ;
+; Total registers                    ; N/A until Partition Merge                       ;
+; Total pins                         ; N/A until Partition Merge                       ;
+; Total virtual pins                 ; N/A until Partition Merge                       ;
+; Total memory bits                  ; N/A until Partition Merge                       ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
+; Total PLLs                         ; N/A until Partition Merge                       ;
++------------------------------------+-------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                                      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C35F672C6       ;                    ;
+; Top-level entity name                                                      ; Test_Bench         ; Mod_Teste          ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Parallel_OUT:parallel_out"                                                              ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; DataOut1 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; DataOut2 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------+
+; Port Connectivity Checks: "EXTENSOR:MuxImmSrc" ;
++------+-------+----------+----------------------+
+; Port ; Type  ; Severity ; Details              ;
++------+-------+----------+----------------------+
+; c[0] ; Input ; Info     ; Stuck at GND         ;
+; d[0] ; Input ; Info     ; Stuck at GND         ;
++------+-------+----------+----------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Register_File:register_file"                                                        ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; x0   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x1   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x2   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x3   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x4   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x5   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x6   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x7   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x8   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x9   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x10  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x11  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x12  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x13  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x14  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x15  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x16  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x17  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x18  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x19  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x20  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x21  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x22  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x23  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x24  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x25  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x26  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x27  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x28  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x29  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x30  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x31  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "ADDER:somador_PC" ;
++----------+-------+----------+----------------+
+; Port     ; Type  ; Severity ; Details        ;
++----------+-------+----------+----------------+
+; b[31..3] ; Input ; Info     ; Stuck at GND   ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND   ;
+; b[2]     ; Input ; Info     ; Stuck at VCC   ;
++----------+-------+----------+----------------+
+
+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Elaboration
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon May 13 19:36:32 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Mod_Teste -c Mod_Teste --analysis_and_elaboration
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file test_bench.v
+    Info (12023): Found entity 1: Test_Bench
+Info (12021): Found 1 design units, including 1 entities, in source file register_file.v
+    Info (12023): Found entity 1: Register_File
+Info (12021): Found 1 design units, including 1 entities, in source file control_unit.v
+    Info (12023): Found entity 1: Control_Unit
+Info (12021): Found 1 design units, including 1 entities, in source file instruction_memory.v
+    Info (12023): Found entity 1: Instruction_Memory
+Info (12021): Found 1 design units, including 1 entities, in source file data_memory.v
+    Info (12023): Found entity 1: Data_Memory
+Info (12021): Found 1 design units, including 1 entities, in source file parallel_in.v
+    Info (12023): Found entity 1: Parallel_IN
+Info (12021): Found 1 design units, including 1 entities, in source file parallel_out.v
+    Info (12023): Found entity 1: Parallel_OUT
+Info (12021): Found 1 design units, including 1 entities, in source file ula.v
+    Info (12023): Found entity 1: ULA
+Info (12021): Found 1 design units, including 1 entities, in source file extensor.v
+    Info (12023): Found entity 1: EXTENSOR
+Info (12021): Found 1 design units, including 1 entities, in source file program_counter.v
+    Info (12023): Found entity 1: Program_Counter
+Info (12021): Found 1 design units, including 1 entities, in source file adder.v
+    Info (12023): Found entity 1: ADDER
+Info (12021): Found 1 design units, including 1 entities, in source file mux3x1.v
+    Info (12023): Found entity 1: MUX3X1
+Info (12021): Found 1 design units, including 1 entities, in source file mux2x1.v
+    Info (12023): Found entity 1: MUX2X1
+Info (12021): Found 1 design units, including 1 entities, in source file and.v
+    Info (12023): Found entity 1: E_AND
+Info (12021): Found 1 design units, including 1 entities, in source file or.v
+    Info (12023): Found entity 1: E_OR
+Info (12127): Elaborating entity "Test_Bench" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at Test_Bench.v(19): object "w_Inst_1" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at Test_Bench.v(20): object "w_Inst_2" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at Test_Bench.v(21): object "w_Inst_3" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at Test_Bench.v(22): object "w_Inst_4" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at Test_Bench.v(23): object "w_Inst_5" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at Test_Bench.v(24): object "w_Inst_6" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at Test_Bench.v(25): object "w_Inst_7" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at Test_Bench.v(26): object "w_Inst_8" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at Test_Bench.v(39): object "w_Inst_op37" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at Test_Bench.v(42): object "w_Imm00" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at Test_Bench.v(43): object "w_Imm01" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at Test_Bench.v(44): object "w_Imm10" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at Test_Bench.v(45): object "w_Imm11" assigned a value but never read
+Warning (10755): Verilog HDL warning at Test_Bench.v(66): assignments to clk create a combinational loop
+Info (12128): Elaborating entity "MUX2X1" for hierarchy "MUX2X1:MuxPCSrc"
+Info (12128): Elaborating entity "Program_Counter" for hierarchy "Program_Counter:program_counter"
+Info (12128): Elaborating entity "ADDER" for hierarchy "ADDER:somador_PC"
+Info (12128): Elaborating entity "Instruction_Memory" for hierarchy "Instruction_Memory:instruction_memory"
+Warning (10762): Verilog HDL Case Statement warning at Instruction_Memory.v(14): can't check case statement for completeness because the case expression has too many possible states
+Info (12128): Elaborating entity "Control_Unit" for hierarchy "Control_Unit:control_unit"
+Warning (10270): Verilog HDL Case Statement warning at Control_Unit.v(36): incomplete case statement has no default case item
+Warning (10270): Verilog HDL Case Statement warning at Control_Unit.v(151): incomplete case statement has no default case item
+Warning (10270): Verilog HDL Case Statement warning at Control_Unit.v(166): incomplete case statement has no default case item
+Warning (10270): Verilog HDL Case Statement warning at Control_Unit.v(181): incomplete case statement has no default case item
+Warning (10270): Verilog HDL Case Statement warning at Control_Unit.v(196): incomplete case statement has no default case item
+Warning (10240): Verilog HDL Always Construct warning at Control_Unit.v(34): inferring latch(es) for variable "RegWrite", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at Control_Unit.v(34): inferring latch(es) for variable "ImmSrc", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at Control_Unit.v(34): inferring latch(es) for variable "ULASrc", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at Control_Unit.v(34): inferring latch(es) for variable "ULAControl", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at Control_Unit.v(34): inferring latch(es) for variable "MemWrite", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at Control_Unit.v(34): inferring latch(es) for variable "ResultSrc", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at Control_Unit.v(34): inferring latch(es) for variable "Branch", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at Control_Unit.v(34): inferring latch(es) for variable "Jump", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "Jump" at Control_Unit.v(34)
+Info (10041): Inferred latch for "Branch" at Control_Unit.v(34)
+Info (10041): Inferred latch for "ResultSrc[0]" at Control_Unit.v(34)
+Info (10041): Inferred latch for "ResultSrc[1]" at Control_Unit.v(34)
+Info (10041): Inferred latch for "MemWrite" at Control_Unit.v(34)
+Info (10041): Inferred latch for "ULAControl[0]" at Control_Unit.v(34)
+Info (10041): Inferred latch for "ULAControl[1]" at Control_Unit.v(34)
+Info (10041): Inferred latch for "ULAControl[2]" at Control_Unit.v(34)
+Info (10041): Inferred latch for "ULAControl[3]" at Control_Unit.v(34)
+Info (10041): Inferred latch for "ULASrc" at Control_Unit.v(34)
+Info (10041): Inferred latch for "ImmSrc[0]" at Control_Unit.v(34)
+Info (10041): Inferred latch for "ImmSrc[1]" at Control_Unit.v(34)
+Info (10041): Inferred latch for "RegWrite" at Control_Unit.v(34)
+Info (12128): Elaborating entity "E_AND" for hierarchy "E_AND:e_and"
+Info (12128): Elaborating entity "E_OR" for hierarchy "E_OR:e_or"
+Info (12128): Elaborating entity "Register_File" for hierarchy "Register_File:register_file"
+Info (12128): Elaborating entity "EXTENSOR" for hierarchy "EXTENSOR:MuxImmSrc"
+Warning (10230): Verilog HDL assignment warning at EXTENSOR.v(48): truncated value with size 40 to match size of target (32)
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ula"
+Info (12128): Elaborating entity "Data_Memory" for hierarchy "Data_Memory:data_memory"
+Info (12128): Elaborating entity "Parallel_OUT" for hierarchy "Parallel_OUT:parallel_out"
+Info (12128): Elaborating entity "Parallel_IN" for hierarchy "Parallel_IN:parallel_in"
+Info (12128): Elaborating entity "MUX3X1" for hierarchy "MUX3X1:MuxResSrc"
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk" is missing source, defaulting to GND
+    Warning (12110): Net "rst" is missing source, defaulting to GND
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk" is missing source, defaulting to GND
+    Warning (12110): Net "rst" is missing source, defaulting to GND
+Info: Quartus II 64-Bit Analysis & Elaboration was successful. 0 errors, 36 warnings
+    Info: Peak virtual memory: 4609 megabytes
+    Info: Processing ended: Mon May 13 19:36:34 2024
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+
